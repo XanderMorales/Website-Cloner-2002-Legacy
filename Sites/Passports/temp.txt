@@ -1,0 +1,57 @@
+# DO NOT DELETE!!
+
+my @TESTIMONIALS = (
+                'I spoke to you earlier today to thank you regarding your services but wanted to write anyway. I was shocked (and a bit
+                skeptical) that your expediting service would actually result in our receiving the passports the day after you received our
+                applications - in a word...fantastic!!!<br><Br>Love, T.S.',
+
+                'I have received my passport. I want to thank you for all your help. You were very reassuring at all times and guiding
+                me through the entire process in a friendly and professional manner.<br><Br>I would highly recommend the services
+                of Passport Express to anyone. It is well worth the peace of mind.<Br><br>Sincerely, vlc',
+
+                'Thank you Passport Express for the impeccable job you do.<br><Br>D.T.<br><Br>(This message came with a box of Godiva
+                chocolates; the office loved them!  feel free to send more)',
+
+                'Thank you very much for your help, It was very kind of you to take the time to explain everything so thoroughly to make
+                sure I didn\'t make any \'little errors\' that might have delayed my passport and caused me to miss my trip (I almost forgot
+                to sign my application but your phone rep caught it while reviewing my materials over the phone before I sent it to you).
+                <Br><br>Thanks again, Ms. C.',
+
+                'I would just like to say that your web site is VERY resourceful... with lots and lots of good information and its all
+                easy to understand, and use. (Which is a hard thing to find.)',
+
+                'Thank you for your assistance in answering my question (your emailed response came so quick it shocked me!)<Br><br>Regards, T.S.',
+
+                'Your site\'s layout is so easy to use, even a frantic person (like me) can use it ;-)',
+
+                'Thanks for the quick response to my email. The info was very helpful.<br><br>V/R, G.',
+
+                'I thought there was no way I could make my \'trip of a lifetime\' when I couldn\'t find my passport just 2 days before my departure.
+                <Br><Br>Your phone rep\'s calm assistance and continued assurances that I was going to make my trip was almost as valuable as
+                getting the passport in time. I\'m telling everyone about you!<br><Br>Thanks again, M.C.',
+
+                'I just got my passport via FedEx this morning and I\'m off to the airport tonight.<br><br>When my manager told me I was going
+                to Germany for a meeting at the end of the week, I thought the only place I was going was to the newspaper to look for a new
+                job. I was supposed get my passport months ago, but procrastination got the best of me (I\'m sure you\'ve never heard that before!)
+                <br><Br>Thanks again for all your help, L.B.',
+
+                'Just a note to say thanks to all the people at Passport Express who make the miracles happen.<br><br>You went above and beyond
+                the call of duty given all the special circumstances and problems with my passport application.<Br><br>You truly know how to
+                cut through the government\'s red tape - what do you know about taxes?',
+
+                'Thank you for the very efficient service you provided. I have just received my passport and couldn\'t be happier. You really
+                helped me through what felt like the worlds worst crisis! I am sharing your good name with everyone I meet!<br><Br>Yours
+                (very) Sincerely, P.D.',
+);
+
+        my $testimonial = rand @TESTIMONIALS;
+        my $rand_testimonial = $TESTIMONIALS[$testimonial];
+
+
+
+=cut
+        my $visa_page = "\$self->Allied::Sites::Passports::Visa::$action";
+        my $eval = eval($visa_page);
+        my $value =($eval)?$eval:$self->Allied::Sites::Universal::UniversalSite::ERROR();
+        return $value;
+=cut
