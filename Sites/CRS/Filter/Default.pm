@@ -92,7 +92,7 @@ Allied::Sites::Passports::Default;
 
 =head1 AUTHOR
 
-Arturo Martinez de Vara <F<subsonic_youth@yahoo.com>>
+Arturo Martinez de Vara <F<notmyemail@yahoo.com>>
 
 =head1 COPYRIGHT
 
